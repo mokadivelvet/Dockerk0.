@@ -1,6 +1,6 @@
 const mysql = require("mysql2");
 const connection = mysql.createConnection({
- host: "mysql",
+ host: "localhost",
  port: 3309,
  user: "utnuser",
  password: "utnpass",
@@ -14,3 +14,4 @@ connection.connect((err) => {
  console.log("Conectado a MySQL en Docker (UTNCRUD)");
 });
 module.exports = connection;
+
